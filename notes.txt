@@ -1,0 +1,80 @@
+Database:
+-----------
+It is an organized collection of data. Data can be manipulated very easily.
+
+Relational DBMS 
+----------------
+>> The data is being stored in form of Tables (rows and col).
+>> SQL is needed to work with it. 
+>> Ex: MySQL, PostgreSQl, Oracle....
+
+Database Management System, NoSQL DBMS
+---------------------------
+>> Data stored as Documents.(JSON)
+>> SQL is not Needed.
+>> Ex: MongoDB, MariaDB.....
+
+SQL --> Structured Query Language 
+-----------------------------------
+Syntax
+-------
+>> SQL is case-insensitive.(a=A)
+SELECT * FROM tbname;
+select * from tbname;
+>> SQL query should end with ;
+
+MySQL 
+------
+>> Open source Relational DBMS
+
+Database ----> Tables ----> Data
+(Schema)
+
+Database ---> Collection of tables 
+Table ---> it stores information about an entity
+Column ---> attributes of that table.
+
+Datatypes 
+-----------
+Numeric Datatypes 
+--------------------
+INT ---> whole (4 BYTES) -2147483647 to 2147483647
+BIGINT ---> LARGE WHOLE NUMBERS
+FLOAT ---> Decimals 
+DOUBLE ---> Large Decimals 
+
+STRING Datatypes 
+-----------------
+CHAR(n) ---> fixed length Character String. Ex: char(5) --> "Hello", "World", "Hi"
+VARCHAR(n) --> Variable length Character String. Ex: varchar(5) --> "Hi", "Hello", "Priyanka"
+TEXT --> paragraphs
+
+BOOLEAN 
+-------
+boolean --> 1 or 0
+
+DATE and TIME 
+----------------
+DATE --> "yyyy-mm-dd". Ex: "2026-03-16"
+TIME --> "HH:MM:SS". Ex: "12:12:56"
+DATETIME ---> Both
+
+Keys and Constraint 
+--------------------
+Primary Key ---> It is used to identify the records uniquely. duplicates are not allowed and null values are also not allowed.
+
+
+Queries 
+---------
+To Create Database ---> CREATE DATABASE dbname;
+To Select Database ----> USE databaseName;
+To Create Table   ---> CREATE TABLE tbname(
+    col1 datatype constraint,
+    col2 datatype ....,
+    col3
+    .
+    .
+);
+
+CRUD operation 
+-----------------
