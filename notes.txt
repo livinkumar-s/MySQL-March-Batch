@@ -59,9 +59,20 @@ DATE --> "yyyy-mm-dd". Ex: "2026-03-16"
 TIME --> "HH:MM:SS". Ex: "12:12:56"
 DATETIME ---> Both
 
+Operators
+----------
+=
+!=, <>
+<
+>
+<=
+>=
+
 Keys and Constraint 
 --------------------
 Primary Key ---> It is used to identify the records uniquely. duplicates are not allowed and null values are also not allowed.
+
+
 
 
 Queries 
@@ -76,5 +87,22 @@ To Create Table   ---> CREATE TABLE tbname(
     .
 );
 
+To Create data ---> INSERT INTO tbname (col details) VALUES (row1),(row2)...;
+To retrive data ---> SELECT (col details --> *) FROM tbName;
+To Update a record --> UPDATE tbname SET col=value;
+To delete record --> DELETE FROM tbname;
+To delete all the records ---> TRUNCATE TABLE tbname;
+
+SQL_SAFE_UPDATES ---> When it is turned on you can update only 1 row and WHERE clause is must, use only PK col.
+
 CRUD operation 
 -----------------
+Create ---> INSERT
+Read ---> SELECT
+Update --> UPDATE
+Delete --> DELETE
+
+WHERE
+------
+it is used to filter the records.
+Ex: SELECT, UPDATE, DELETE...... WHERE condition;
