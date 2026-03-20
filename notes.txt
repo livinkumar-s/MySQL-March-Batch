@@ -61,12 +61,54 @@ DATETIME ---> Both
 
 Operators
 ----------
+Comparison
+------------
 =
 !=, <>
 <
 >
 <=
 >=
+
+BETWEEN 
+----------
+>> Used for range filtering(inclusive range)
+Ex: ..... WHERE col BETWEEN val1 and val2;
+
+IN Operators
+--------------
+>> IN and NOT IN
+>> matches multiple value. (replaces multiple OR operators).
+Ex: .... WHERE col in (val1,val2....);
+
+LIKE Operator 
+--------------
+>> Pattern Matching
+>> .... WHERE strCol LIKE "pattern";
+
+Wildcards:
+% ---> it matches any number of chars(0 to inf).
+_ ---> it matches only one char.
+
+Starts with n ---> "n%" --> "naveen", "nine", "n".
+Ends with r ---> "%r" --> "roar", "r "
+"__m" --> "ram", "bheem"
+
+Sorting
+----------
+>>Arranging
+Ex: ..... ORDER BY col ASC/DESC;
+
+Limit/Offset
+-------------
+>> Limiting the number of records while retriving data.
+Ex:....... LIMIT num OFFSET num;
+
+Logical Operators
+-------------------
+AND ---> True ---> Both are True 
+OR ---> True --> Anyone is True 
+NOT ---> True --> False
 
 Keys and Constraint 
 --------------------
