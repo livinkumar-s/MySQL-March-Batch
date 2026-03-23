@@ -148,3 +148,35 @@ WHERE
 ------
 it is used to filter the records.
 Ex: SELECT, UPDATE, DELETE...... WHERE condition;
+
+Funtions of MySQL 
+-----------------
+>> In built operations that takes input and return output...
+
+Numeric Functions
+------------------
+ROUND(Dec,dp) ----> It rounds off a decimal number... 
+Ex: ROUND(22.764754754,4) --> 22.7648
+FLOOR(Dec) ---> It removes all the decimal places. FLOOR(44.999999)--> 44
+CEIL(Floor) ---> It rounds off the dec to next Int.
+ABS() --> finds out absolute number. 9 --> 9
+MOD(num1, num2) --> it returns reminder. MOD(55,4) --> 3
+POWER(), POW() 
+SQRT(num)
+
+STRING Functions
+------------------
+CONCAT(str1,str2,.....)---> attaching multiple strings....
+Length(str)---> length of that string.
+UPPER()
+LOWER()
+TRIM, LTRIM, RTRIM
+SUBSTRING(str, start, len) "Hello World...!"
+REPLACE(str, old, new)  "Hello world" --> "Hellop India"
+
+Date Functions 
+--------------
+NOW() ---> currentdate and time 
+CURDATE()
+CURTIME()
+DATEDIFF(d1,d2)

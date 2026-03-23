@@ -35,5 +35,9 @@ SELECT * FROM actorlist WHERE age>60 ORDER BY actorId asc;
 SELECT * from actorlist WHERE age<60 ORDER BY name asc LIMiT 3;
 SELECT * from actorlist LIMIT 3 OFFSET 3;
 
+SELECT * FROM actorlist 
+ORDER BY age DESC 
+LIMIT 1
+
 
 
