@@ -193,20 +193,36 @@ CURTIME()
 DATEDIFF(d1,d2)
 
 
-Cricketer:
-id     name             email               phone       noc isAc
-------------------------------------------------------------------
-11	Sachin Tendulkar	sachin@example.com	1234567890	25	1
-12	Virat Kohli	        virat@example.com	987654321	22	1
-13	MS Dhoni	        ms@example.com	    1422334455	21	1
-14	Rohit Sharma	    rohit@example.com	1322334455	28	1
-15	Suresh Raina	    suresh@example.com	1124334455	22	1
-16	Rahul Dravid	    rahul@example.com	1192334455	30	1
+Joins 
+---------
+>> Used to combine rows from 2 or more tables.
 
+Inner Join 
+-----------
+>> It returns only matching rows.
+>> Non - matching rows are not selected.
+Ex: SELECT col details FROM tb1 INNER JOIN tb2 ON (relared col);
 
-Jersey:
-id     jerseyNumber   criCketerId(fk---->Cricketer(id))
-----------------------------------
-1        18             12
-2        45             14
-3        7              13
+LEFT OUTER JOIN 
+----------------
+>> It returns all records from left table.
+>> It matches record from right table.
+Ex: SELECT col details FROM tb1 LEFT JOIN tb2 ON (relared col);
+
+RIGHT OUTER JOIN 
+-----------------
+>> It returns all records from right table.
+>> It matches record from left table.
+Ex: SELECT col details FROM tb1 RIGHT JOIN tb2 ON (relared col);
+
+FULL OUTER JOIN 
+---------------
+>> It returns all records from both table.
+SELECT col details FROM tb1 LEFT JOIN tb2 ON (relared col)
+union
+SELECT col details FROM tb1 RIGHT JOIN tb2 ON (relared col);
+
+CROSS JOIN 
+------------
+>> It matches all the records from left table with all the records from right table.
+
