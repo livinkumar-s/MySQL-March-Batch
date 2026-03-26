@@ -226,3 +226,25 @@ CROSS JOIN
 ------------
 >> It matches all the records from left table with all the records from right table.
 
+Aggregation and Grouping 
+-------------------------
+Aggregation:
+Performing Calculations on multiple rows and fetch a single result.
+
+COUNT() --> Count the rows.
+MAX() --> Largest value
+MIN() --> Smallest Value
+AVG() --> finds out average mark;
+SUM() --> Finds out sum
+
+Grouping
+---------
+>> GROUP BY
+Ex: SELECT aggrCol FROM tbname GROUP BY col;
+
+HAVING 
+--------
+>> Used to filter groups.
+
+WHERE --> rows 
+HAVING --> Groups
