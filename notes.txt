@@ -148,12 +148,26 @@ To delete all the records ---> TRUNCATE TABLE tbname;
 
 SQL_SAFE_UPDATES ---> When it is turned on you can update only 1 row and WHERE clause is must, use only PK col.
 
-CRUD operation 
+CRUD operation (only on data)
 -----------------
 Create ---> INSERT
 Read ---> SELECT
 Update --> UPDATE
 Delete --> DELETE
+
+ALTER 
+-------
+>> It is used to modify an existing table.
+To add a new col --->  ALTER TABLE tbname ADD COLUMN coldetail;
+multiple col ---> ALTER TABLE tbname ADD COLUMN (coldetail, coldetail,....)
+To add a col with pos ---> ALTER TABLE tbname ADD coldetails AFTER col; (FIRST)
+To change datatype --> ALTER TABLE tbname MODIFY colname datatype;
+To Rename column ---> ALTER TABLE tbname RENAME COLUMN col to newName;
+To Drop a column ---> ALTER TABLE tbname DROP COLUMN col;
+
+To rename a table ---> ALTER TABLE tbanem RENAME TO newname;
+To Drop a table ---> DROP TABLE tbname;
+To drop database --> DROP DATABASE dbname;  
 
 WHERE
 ------
@@ -280,26 +294,3 @@ Correlated  Subqueries
 >> Outer query depends on value from inner query. Inner query depends on value from outer query.
 subquery is getting executed for each and every rows.
 
-
-
-id   name  marks    dept                    avg 
-----------------------------                ----
-1	Alice	85	Computer Science            85>89.9
-2	Bob	    78	Mathematics                 78>82
-3	Charlie	92	Computer Science
-4	David	88	Mathematics
-5	Eve	    95	Computer Science
-6	Frank	80	Mathematics
-7	Grace	90	Computer Science
-8	Heidi	82	Mathematics
-9	Ivan	87	Computer Science
-10	Judy	91	Commerce
-11	Karl	79	Commerce
-12	Leo	    84	Commerce
-13	Mallory	93	Commerce
-14	Nina	77	Commerce
-15	Oscar	89	Commerce
-
-
-
-select * from studentmark s1 where marks> (select avg(marks) from studentmark s2 where department = s1.department);
