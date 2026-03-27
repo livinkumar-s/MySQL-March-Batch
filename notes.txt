@@ -248,3 +248,58 @@ HAVING
 
 WHERE --> rows 
 HAVING --> Groups
+
+Subqueries 
+------------
+>> A subquery is a query inside another.
+
+Inner query --> gives data 
+Outer query --> uses that data.
+
+Ex: ....(subquery);
+
+Single Row Subqueries
+----------------------
+>> It returns single row.
+Ex: SELECT * from studentmark 
+where marks>(SELECT avg(marks) from studentmark);
+
+Multi Row subquery
+------------------
+>> It returns multiple row.
+
+ANY 
+ALL 
+
+Ex: select * from studentmark 
+where marks> ANY (select marks from studentmark 
+where department="Mathematics"); 
+
+Correlated  Subqueries
+-----------------------
+>> Outer query depends on value from inner query. Inner query depends on value from outer query.
+subquery is getting executed for each and every rows.
+
+
+
+id   name  marks    dept                    avg 
+----------------------------                ----
+1	Alice	85	Computer Science            85>89.9
+2	Bob	    78	Mathematics                 78>82
+3	Charlie	92	Computer Science
+4	David	88	Mathematics
+5	Eve	    95	Computer Science
+6	Frank	80	Mathematics
+7	Grace	90	Computer Science
+8	Heidi	82	Mathematics
+9	Ivan	87	Computer Science
+10	Judy	91	Commerce
+11	Karl	79	Commerce
+12	Leo	    84	Commerce
+13	Mallory	93	Commerce
+14	Nina	77	Commerce
+15	Oscar	89	Commerce
+
+
+
+select * from studentmark s1 where marks> (select avg(marks) from studentmark s2 where department = s1.department);
