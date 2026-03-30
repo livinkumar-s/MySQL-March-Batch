@@ -294,3 +294,17 @@ Correlated  Subqueries
 >> Outer query depends on value from inner query. Inner query depends on value from outer query.
 subquery is getting executed for each and every rows.
 
+
+View 
+-----
+>> It is a virtual Table created from a query.
+>> will not store actual data.
+>> It shows data from real table.
+
+To Create View ---> CREATE VIEW viewName AS SELECT...
+--> Security ---> hides sensitive column.
+
+
+name, email, age, password 
+user ---> userView --(name, email)
+admin ---> adminView --(age,pass)
