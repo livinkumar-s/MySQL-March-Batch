@@ -12,3 +12,4 @@ DROP TABLE actors;
 DROP DATABASE marchbatch;
 
 DROP TABLE cricketer;
+

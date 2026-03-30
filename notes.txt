@@ -308,3 +308,23 @@ To Create View ---> CREATE VIEW viewName AS SELECT...
 name, email, age, password 
 user ---> userView --(name, email)
 admin ---> adminView --(age,pass)
+
+
+Python ---> MySQL server 
+-------------------------
+package ---> mysql-connector-python==8.0.33
+pip install pckName==version
+
+conn=mysql.connector.connect(
+    host="host",
+    user="username",
+    password="*****",
+    port=number,
+    database="dbname"
+)
+
+create --->  name, phone --> adding contact
+view contacts ---> all contacts asc(names)
+search contact --> name --> show matching detail.
+update ---> name or mobile ---> choose the contact ---> name, phone ---> updatiopn 
+delete ---> name...
